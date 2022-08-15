@@ -3,7 +3,7 @@ from flask_restx import Namespace, Resource
 from app.container import director_sevice
 from app.dao.models.director import DirectorSchema
 from app.helper.constants import AMOUNT_POSTS_PER_PAGE
-from app.helper.utils import check_pagination
+
 
 director_ns = Namespace("directors")
 

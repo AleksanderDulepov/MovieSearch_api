@@ -1,4 +1,4 @@
-from flask import request, render_template
+from flask import request
 from flask_restx import Namespace, Resource
 from app.container import movie_service
 from app.dao.models.movie import MovieSchema

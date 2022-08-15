@@ -2,7 +2,6 @@ from flask import request
 from flask_restx import Namespace, Resource
 from app.container import genre_sevice
 from app.dao.models.genre import GenreSchema
-from app.helper.utils import check_pagination
 
 genre_ns = Namespace("genres")
 

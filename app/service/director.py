@@ -10,10 +10,10 @@ class DirectorService():
 
     def get_all(self,data):
         query = self.dao.get_all()
-        count_items = query.all()
 
         if data.get("page") is not None:
             page = int(data.get("page"))
             return query.paginate(page, AMOUNT_POSTS_PER_PAGE, False).items
         else:
+            count_items = query.all()
             return query.paginate(1, len(count_items), False).items

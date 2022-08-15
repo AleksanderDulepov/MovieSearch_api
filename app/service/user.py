@@ -43,6 +43,7 @@ class UserService():
             return None
         return None
 
+
     def do_patch(self, email, data):
         data.pop('id', None)  # удалить id, если он будет передан
         data.pop('email', None)  # удалить email, если он будет передан
